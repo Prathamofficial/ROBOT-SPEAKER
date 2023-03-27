@@ -107,21 +107,6 @@
         border: none;
     }
 
-    .header{
-        animation: typewritter 4s steps(40) 1s 1 normal both,
-        blinkTextCursor 500ms steps(40) infinite normal;
-    }
-
-    @keyframes typwritter {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 16em;
-        }
-    }
-
 </style>
 
 <body>
@@ -152,19 +137,5 @@
 
 
 </body>
-<script>const text = document.getElementById('texts');
-const str = text.innerHTML;
 
-text.innerHTML = "";
-
-let i = 0;
-let timer = setInterval(function() {
-  if (i < str.length) {
-    text.innerHTML += str.charAt(i);
-    i++;
-  } else {
-    clearInterval(timer);
-  }
-}, 100);
-</script>
 </html>
